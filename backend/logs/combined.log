@@ -1,0 +1,6 @@
+{"level":"info","message":"Secure Data Wiper API running on port 3001","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:10:43.338Z"}
+{"level":"info","message":"Environment: development","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:10:43.341Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:10:43.350Z"}
+{"level":"info","message":"Secure Data Wiper API running on port 3001","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:19:47.225Z"}
+{"level":"info","message":"Environment: development","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:19:47.227Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"secure-data-wiper-api","timestamp":"2025-09-12T07:19:47.236Z"}
