@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cybersecurity Theme Design System - All colors, gradients, fonts, etc defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cybersecurity Dark Theme */
+    --background: 220 27% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 267 84% 81%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 15%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom Cybersecurity Colors */
+    --cyber-blue: 217 91% 60%;
+    --cyber-purple: 267 84% 81%;
+    --cyber-cyan: 180 100% 70%;
+    --cyber-glow: 217 91% 60%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(267, 84%, 81%));
+    --gradient-dark: linear-gradient(135deg, hsl(220, 27%, 8%), hsl(220, 20%, 12%));
+    --gradient-glow: linear-gradient(135deg, hsl(217, 91%, 60% / 0.1), hsl(267, 84%, 81% / 0.1));
+
+    /* Shadows & Effects */
+    --shadow-cyber: 0 10px 30px -10px hsl(217 91% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.4);
+    --shadow-card: 0 8px 32px hsl(220 27% 8% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-glow: glow 2s ease-in-out infinite alternate;
+
+    /* Sidebar colors for cybersecurity theme */
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 220 27% 8%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: var(--gradient-dark);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Cybersecurity component styles */
+  .gradient-cyber {
+    background: var(--gradient-cyber);
+  }
+  
+  .gradient-glow {
+    background: var(--gradient-glow);
+  }
+  
+  .shadow-cyber {
+    box-shadow: var(--shadow-cyber);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .cyber-glow {
+    animation: var(--animation-glow);
+  }
+  
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--gradient-dark), var(--gradient-dark)) padding-box,
+                var(--gradient-cyber) border-box;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px hsl(217 91% 60% / 0.2);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(217 91% 60% / 0.4);
+  }
+}
