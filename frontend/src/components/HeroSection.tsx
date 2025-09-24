@@ -25,7 +25,7 @@ export const HeroSection = () => {
         {/* Badge */}
         <Badge className="mb-6 bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30 hover:bg-cyber-blue/30">
           <Shield className="w-4 h-4 mr-2" />
-          JUETHack 2025 Winner
+          JUETHack 2025 
         </Badge>
 
         {/* Main Heading */}
